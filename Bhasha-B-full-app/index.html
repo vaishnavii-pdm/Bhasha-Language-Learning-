@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0C6670">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bhasha">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>Bhasha</title>
+<meta name="description" content="Bhasha is a playful language-learning app with easy and hard lessons, funny quizzes, a daily challenge and adaptive tests in 8 Indian and 13 international languages, plus a translator for any language to any language. Installable and works offline.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230C6670'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Gujarati:wght@400;600&family=Noto+Sans+Malayalam:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Noto+Sans+KR:wght@400;600&family=Noto+Sans+SC:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <button class="brand" data-a="home" aria-label="Bhasha home">
+      <span class="bn">Bhasha</span><span class="bh nat" lang="hi">भाषा</span>
+    </button>
+    <nav class="topnav" aria-label="Main"><button class="navlink" data-a="today">Today</button><button class="navlink" data-a="translate">Translator</button><button class="navlink" data-a="install" id="install-btn" hidden>Install</button></nav>
+    <div class="stats" id="stats" aria-label="Your progress" hidden>
+      <span class="stat streak"><b id="st-streak">0</b>-day streak</span>
+      <span class="stat"><b id="st-xp">0</b> XP</span>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app">
+  <noscript>Bhasha needs JavaScript to run. Please turn it on and reload.</noscript>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="js/data.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/features.js"></script>
+<script src="js/translate.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
